@@ -473,14 +473,14 @@ img {
   display: flex;
   margin-right: 10px;
 }
+.social-icon-item:last-child {
+  margin-right: 0px;
+}
 
 .social {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
-.social-icon-item :not(:last-child) {
-  margin-right: 10px;
 }
 
 .costumers-title {
@@ -552,6 +552,10 @@ img {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+}
+
+.footer-icon-item:last-child {
+  margin-right: 0px;
 }
 
 .social-footer-link {
