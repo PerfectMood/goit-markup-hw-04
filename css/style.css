@@ -551,6 +551,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 
 .social-footer-link {
