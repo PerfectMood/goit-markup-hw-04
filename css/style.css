@@ -43,6 +43,16 @@ img {
   padding-right: 15px;
   width: 1200px;
 }
+.visualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 /* Logo */
 
@@ -95,11 +105,14 @@ img {
 .mail-container {
   display: flex;
   align-items: center;
+  margin-right: 30px;
 }
+
 .mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 .phone-container {
   display: flex;
@@ -109,6 +122,7 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .site-nav {
@@ -464,10 +478,19 @@ img {
   border-radius: 50%;
   background-color: #ffff;
 }
+.social {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+}
+.social-link:hover .social,
+.social-link:focus .social {
+  fill: var(--main-color);
 }
 .social-icon-item {
   display: flex;
@@ -475,12 +498,6 @@ img {
 }
 .social-icon-item:last-child {
   margin-right: 0px;
-}
-
-.social {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
 }
 
 .costumers-title {
@@ -517,8 +534,13 @@ img {
 
   fill: #afb1b8;
 }
-.costumer-item-link:hover {
+.costumer-item-link:hover,
+.costumer-item-link:focus {
   border: 1px solid #2196f3;
+}
+.costumer-item-link:hover .costumer-item,
+.costumer-item-link:focus .costumer-item {
+  fill: var(--accent-color);
 }
 
 .footer-icon {
